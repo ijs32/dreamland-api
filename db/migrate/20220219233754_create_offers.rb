@@ -1,6 +1,6 @@
-class CreateOpportunityCandidates < ActiveRecord::Migration[7.0]
+class CreateOffers < ActiveRecord::Migration[7.0]
   def change
-    create_table :opportunity_candidates do |t|
+    create_table :offers do |t|
       t.integer :opportunity_id
       t.integer :candidate_id
 
