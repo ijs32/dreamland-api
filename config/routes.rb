@@ -6,4 +6,7 @@ Rails.application.routes.draw do
 
   # USER ROUTES
   post "/users" => "users#create"
+
+  post "/sessions" => "sessions#create"
+  
 end
