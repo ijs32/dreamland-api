@@ -1,0 +1,2 @@
+class OpportunityCandidate < ApplicationRecord
+end
