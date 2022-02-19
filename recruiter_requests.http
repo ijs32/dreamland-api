@@ -1,0 +1,12 @@
+###CREATE
+POST http://localhost:3000/recruiters
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMywiZXhwIjoxNjQ1Mzk4NzIyfQ.54LTJoH0y7Jvh8km2bArE8nuObxPTszmXyB3UjbInt4
+Content-Type: application/json
+
+{
+  "company_name": "Recruiting Company Inc."
+}
+
+### DESTROY
+DELETE http://localhost:3000/recruiters/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMywiZXhwIjoxNjQ1Mzk4NzIyfQ.54LTJoH0y7Jvh8km2bArE8nuObxPTszmXyB3UjbInt4

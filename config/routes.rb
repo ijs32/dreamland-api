@@ -18,4 +18,10 @@ Rails.application.routes.draw do
   patch "/candidates/:id" => "candidates#update"
   # destroy route
   delete "/candidates/:id" => "candidates#destroy"
+  
+  post "/sessions" => "sessions#create"
+  
+  ### RECRUITER ROUTES
+  post "/recruiters" => "recruiters#create"
+  delete "/recruiters/:id" => "recruiters#destroy"
 end

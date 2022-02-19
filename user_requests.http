@@ -3,9 +3,19 @@ POST http://localhost:3000/users
 Content-Type: application/json
 
 {
-  "name": "Eric Candidate",
-  "email": "eric@test.com",
+  "name": "Paul Recruiter",
+  "email": "paul@test.com",
   "password": "password",
-  "candidate": true,
+  "candidate": false,
   "password_confirmation": "password"
+}
+
+###
+
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "paul@test.com",
+  "password": "password"
 }
