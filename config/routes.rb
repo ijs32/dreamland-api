@@ -9,4 +9,8 @@ Rails.application.routes.draw do
 
   post "/sessions" => "sessions#create"
   
+
+  ### RECRUITER ROUTES
+  post "/recruiters" => "recruiters#create"
+  delete "/recruiters/:id" => "recruiters#destroy"
 end
