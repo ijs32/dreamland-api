@@ -9,3 +9,13 @@ Content-Type: application/json
   "candidate": true,
   "password_confirmation": "password"
 }
+
+###
+
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "eric@test.com",
+  "password": "password"
+}
