@@ -1,5 +1,5 @@
 class Candidate < ApplicationRecord
   belongs_to :user
-  has_many :opportunity_candidates
-  has_many :opportunities, through: :opportunity_candidates
+  has_many :offers
+  has_many :opportunities, through: :offers
 end
