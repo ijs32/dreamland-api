@@ -19,3 +19,12 @@ Content-Type: application/json
   "email": "kenny@email.com",
   "password": "password"
 }
+
+###  for recruiter testing use jwt generated below
+POST http://localhost:3000/sessions
+Content-Type: application/json
+
+{
+  "email": "eric@email.com",
+  "password": "password"
+}
