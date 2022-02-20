@@ -24,4 +24,8 @@ Rails.application.routes.draw do
   ### RECRUITER ROUTES
   post "/recruiters" => "recruiters#create"
   delete "/recruiters/:id" => "recruiters#destroy"
+
+  ###OFFER ROUTES
+  post "/offers" => "offers#create" 
+  delete "/offers/:id" => "offers#destroy"
 end
