@@ -1,5 +1,6 @@
 class OffersController < ApplicationController
   before_action :authenticate_user
+  before_action :authenticate_recruiter, except: [:index]
   
   def index
     recruiter = Recruiter.find_by(user_id: current_user.id)
@@ -15,7 +16,6 @@ class OffersController < ApplicationController
     end
   end
   def create
-    before_action :authenticate_recruiter
     offer = Offer.find_by(opportunity_id: params[:opportunity_id], candidate_id: params[:candidate_id])
     if !offer 
       new_offer = Offer.new(opportunity_id: params[:opportunity_id], candidate_id: params[:candidate_id])
