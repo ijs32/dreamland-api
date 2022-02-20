@@ -30,11 +30,11 @@ class CandidatesController < ApplicationController
 
   def destroy
     candidate = Candidate.find_by(user_id: current_user.id)
-    candidate.delete
-    if candidate.save
-      render json: { message: "Candidate destroyed successfully" }, status: :destroyed
-    else
-      render json: { message: candidate.errors.full_messages }, status: :unauthorized
+    offers = candidate.offers
+    if offers
+      offers.each{|offer| offer.destroy}
     end
+    candidate.delete
+    render json: { message: "Candidate destroyed" }
   end
 end

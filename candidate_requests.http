@@ -1,0 +1,12 @@
+###CREATE
+POST http://localhost:3000/candidates
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMywiZXhwIjoxNjQ1Mzk4NzIyfQ.54LTJoH0y7Jvh8km2bArE8nuObxPTszmXyB3UjbInt4
+Content-Type: application/json
+
+{
+  "user_id": 1
+}
+
+### DESTROY
+DELETE http://localhost:3000/candidates
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDU0NjQyOTB9.4RHQ-TfFmmucPpz5elYw0ixxYFMD8NNNjnMLPVmOqEI

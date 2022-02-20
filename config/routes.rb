@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   # update route
   patch "/candidates/:id" => "candidates#update"
   # destroy route
-  delete "/candidates/:id" => "candidates#destroy"
+  delete "/candidates" => "candidates#destroy"
   
   post "/sessions" => "sessions#create"
   

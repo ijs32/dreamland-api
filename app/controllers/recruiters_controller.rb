@@ -16,7 +16,9 @@ class RecruitersController < ApplicationController
     opportunities = recruiter.opportunities
     for opp in opportunities do
       offers = Offer.where(opportunity_id: opp.id)
-      offers.each{|offer| offer.destroy}
+      if offers
+        offers.each{|offer| offer.destroy}
+      end
     end
     if opportunities
       opportunities.each{|opp| opp.destroy}
