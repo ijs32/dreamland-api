@@ -1,4 +1,4 @@
-class CandidateController < ApplicationController
+class CandidatesController < ApplicationController
   before_action :authenticate_user
   before_action :authenticate_candidate, except: [:index, :show]
 
@@ -37,5 +37,4 @@ class CandidateController < ApplicationController
       render json: { message: candidate.errors.full_messages }, status: :unauthorized
     end
   end
-
 end
