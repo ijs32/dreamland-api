@@ -15,6 +15,7 @@ class OffersController < ApplicationController
       render json: offers
     end
   end
+  
   def create
     offer = Offer.find_by(opportunity_id: params[:opportunity_id], candidate_id: params[:candidate_id])
     if !offer 
