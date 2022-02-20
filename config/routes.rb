@@ -6,6 +6,24 @@ Rails.application.routes.draw do
 
   # USER ROUTES
   post "/users" => "users#create"
+  
+  # SESSIONS ROUTE
+  post "/sessions" => "sessions#create"
+
+  # OFFERS ROUTE
+  post "/offers/:candidate_id/:opportunity_id" => "offers#create"
+
+  # OPPORTUNITY ROUTE
+  # index route
+  get "/opportunities" => "opportunities#index"
+  # show route
+  get "/opportunities/:id" => "opportunities#show"
+  # create route
+  post "/opportunities" => "opportunities#create"
+  # update route
+  patch "/opportunities/:id" => "opportunities#update"
+  # destroy route
+  delete "/opportunities/:id" => "opportunities#destroy"
 
   # CANDIDATE ROUTES
   # index route
@@ -19,7 +37,6 @@ Rails.application.routes.draw do
   # destroy route
   delete "/candidates" => "candidates#destroy"
   
-  post "/sessions" => "sessions#create"
   
   ### RECRUITER ROUTES
   post "/recruiters" => "recruiters#create"
