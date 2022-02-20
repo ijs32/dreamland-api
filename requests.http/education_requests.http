@@ -1,0 +1,21 @@
+###CREATE
+POST http://localhost:3000/educations
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDU0Nzc3ODF9.KeyG39PWE8q-_eiDuMN63HoEuykOlfkKbNq15BqTBLQ
+Content-Type: application/json
+
+{
+  "school": "Actualize",
+  "degree": "Certificate",
+  "field": "Full Stack Web Dev",
+  "start_year": 2021,
+  "end_year": 2021
+}
+
+### DESTROY
+DELETE http://localhost:3000/educations/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDU0Nzc3ODF9.KeyG39PWE8q-_eiDuMN63HoEuykOlfkKbNq15BqTBLQ
+
+### GET
+
+GET http://localhost:3000/educations
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDU0Nzc3ODF9.KeyG39PWE8q-_eiDuMN63HoEuykOlfkKbNq15BqTBLQ
