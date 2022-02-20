@@ -26,6 +26,7 @@ Rails.application.routes.draw do
   delete "/recruiters/:id" => "recruiters#destroy"
 
   ###OFFER ROUTES
+  get "/offers" => "offers#index"
   post "/offers" => "offers#create" 
   delete "/offers/:id" => "offers#destroy"
 end

@@ -1,3 +1,9 @@
+### INDEX
+GET http://localhost:3000/offers
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2NDU0Njg2MjJ9.Ma1b-dwKCeEY0ypXt8JRgndQh_utfeuUNJKXfcl8gjA
+
+
+
 ###CREATE
 POST http://localhost:3000/offers
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NDU0NjYwMzR9.irPNRv9G331K80_t4s9n9KG-52hfRpsR9E0ZXTizvoU
@@ -9,5 +15,5 @@ Content-Type: application/json
 }
 
 ### DESTROY
-DELETE http://localhost:3000/offers/3
+DELETE http://localhost:3000/offers/10
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NDU0NjYwMzR9.irPNRv9G331K80_t4s9n9KG-52hfRpsR9E0ZXTizvoU
