@@ -9,4 +9,4 @@ Content-Type: application/json
 
 ### DESTROY
 DELETE http://localhost:3000/recruiters/1
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMywiZXhwIjoxNjQ1Mzk4NzIyfQ.54LTJoH0y7Jvh8km2bArE8nuObxPTszmXyB3UjbInt4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDU0NjM2MzZ9.bX96jt_07atjLXHEbY0oij3uCTEwyh3qNHScsI-7xm8

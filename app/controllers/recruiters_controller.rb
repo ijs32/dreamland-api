@@ -13,11 +13,14 @@ class RecruitersController < ApplicationController
 
   def destroy
     recruiter = Recruiter.find_by(user_id: current_user.id)
-    opportunities = Opportunity.where(recruiter_id: recruiter.id)
-    opportunities.map{|opp| opportunity_candidate = OpporunityCandidate.find_by(opportunity_id = opp.id)  
-      opportunity_candidate.destroy
-    }
-    opportunities.destroy
+    opportunities = recruiter.opportunities
+    for opp in opportunities do
+      offers = Offer.where(opportunity_id: opp.id)
+      offers.each{|offer| offer.destroy}
+    end
+    if opportunities
+      opportunities.each{|opp| opp.destroy}
+    end
     recruiter.destroy
     render json: {message: "Recruiter and associated opportunities removed from app."}
   end
