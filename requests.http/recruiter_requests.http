@@ -10,3 +10,8 @@ Content-Type: application/json
 ### DESTROY
 DELETE http://localhost:3000/recruiters/2
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDU0NjM2MzZ9.bX96jt_07atjLXHEbY0oij3uCTEwyh3qNHScsI-7xm8
+
+###
+GET http://localhost:3000/recruiters
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2NDU1MDUwMzB9.DJGbK3P9A9n1HtgwkXIREc7APFvuF1q5Us28DHhKoZ4
+Content-Type: application/json
