@@ -1,6 +1,12 @@
 class RecruitersController < ApplicationController
   before_action :authenticate_user
-  before_action :authenticate_recruiter
+  before_action :authenticate_recruiter, except: [:index]
+  
+  def index
+    recruiter = Recruiter.all
+    render json: recruiter
+  end
+
   def create
     recruiter = Recruiter.new(user_id: current_user.id, company_name: params[:company_name])
 

@@ -39,6 +39,7 @@ Rails.application.routes.draw do
   
   
   ### RECRUITER ROUTES
+  get "/recruiters" => "recruiters#index"
   post "/recruiters" => "recruiters#create"
   delete "/recruiters/:id" => "recruiters#destroy"
 
