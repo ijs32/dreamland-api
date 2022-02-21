@@ -4,5 +4,6 @@ class Recruiter < ApplicationRecord
 
   def select_candidate(candidate_id)
     candidate = Candidate.find_by(id: candidate_id)
+    return candidate
   end
 end
