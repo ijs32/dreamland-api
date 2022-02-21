@@ -8,7 +8,7 @@ class RecruitersController < ApplicationController
   end
 
   def show
-    recruiter = recruiter.find_by(user_id: current_user.id)
+    recruiter = Recruiter.find_by(user_id: current_user.id)
     render json: recruiter
   end
 
