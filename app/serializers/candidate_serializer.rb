@@ -5,5 +5,5 @@ class CandidateSerializer < ActiveModel::Serializer
   has_many :educations
   has_many :skills
 
-  attributes :id, :user, :skills, :educations 
+  attributes :id, :user, :skills, :educations, :offers 
 end
