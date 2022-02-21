@@ -3,4 +3,5 @@ class Candidate < ApplicationRecord
   has_many :offers
   has_many :opportunities, through: :offers
   has_many :educations
+  has_many :skills
 end

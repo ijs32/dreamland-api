@@ -1,0 +1,18 @@
+###CREATE
+POST http://localhost:3000/skills
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDU0OTA0MzR9.MGTlhJ9TtBuhvnT06v22_oXp2aLLnCg2dRYJxHqOwzc
+Content-Type: application/json
+
+{
+  "skill_title": "Ruby",
+  "skill_level": "Advanced"
+}
+
+### DESTROY
+DELETE http://localhost:3000/skills/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDU0Nzc3ODF9.KeyG39PWE8q-_eiDuMN63HoEuykOlfkKbNq15BqTBLQ
+
+### GET
+
+GET http://localhost:3000/skills
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDU0Nzc3ODF9.KeyG39PWE8q-_eiDuMN63HoEuykOlfkKbNq15BqTBLQ

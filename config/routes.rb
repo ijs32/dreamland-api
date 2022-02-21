@@ -51,4 +51,9 @@ Rails.application.routes.draw do
   get "/educations" => "educations#index"
   post "/educations" => "educations#create"
   delete "/educations/:id" => "educations#destroy"
+  
+  ### Skill Routes
+  get "/skills" => "skills#index"
+  post "/skills" => "skills#create"
+  delete "/skills/:id" => "skills#destroy"
 end
