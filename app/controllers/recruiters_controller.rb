@@ -7,6 +7,11 @@ class RecruitersController < ApplicationController
     render json: recruiter
   end
 
+  def show
+    recruiter = recruiter.find_by(user_id: current_user.id)
+    render json: recruiter
+  end
+
   def create
     recruiter = Recruiter.new(user_id: current_user.id, company_name: params[:company_name])
 
