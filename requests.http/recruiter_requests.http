@@ -13,5 +13,10 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NDU0NjM2M
 
 ###
 GET http://localhost:3000/recruiters
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2NDU1MDUwMzB9.DJGbK3P9A9n1HtgwkXIREc7APFvuF1q5Us28DHhKoZ4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NDU1NDMzMzh9.QPZmuP09RiN0hAeFmU8uhN4nkjsW5BCOLYr-XUllTbE
+Content-Type: application/json
+
+###
+GET http://localhost:3000/recruiters/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NDU1NDMzMzh9.QPZmuP09RiN0hAeFmU8uhN4nkjsW5BCOLYr-XUllTbE
 Content-Type: application/json
