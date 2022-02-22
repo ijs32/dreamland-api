@@ -1,5 +1,5 @@
 ###CREATE
-POST http://localhost:3000/offers
+POST http://localhost:5000/offers
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2NDU0Njk3NTR9.8lPaxJxjBd2fdxGaYP5K7seqjGzS6mWwQ0vJaIdR5uA
 Content-Type: application/json
 
@@ -9,10 +9,10 @@ Content-Type: application/json
 }
 
 ### DESTROY
-DELETE http://localhost:3000/offers/3
+DELETE http://localhost:5000/offers/3
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NDU0NjYwMzR9.irPNRv9G331K80_t4s9n9KG-52hfRpsR9E0ZXTizvoU
 
 ### GET
 
-GET http://localhost:3000/offers
+GET http://localhost:5000/offers
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2NDU0Njk3NTR9.8lPaxJxjBd2fdxGaYP5K7seqjGzS6mWwQ0vJaIdR5uA
