@@ -1,5 +1,5 @@
 ### Users create (signup)
-POST http://localhost:3000/users
+POST http://localhost:5000/users
 Content-Type: application/json
 
 {
@@ -12,7 +12,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3000/sessions
+POST http://localhost:5000/sessions
 Content-Type: application/json
 
 {
@@ -21,7 +21,7 @@ Content-Type: application/json
 }
 
 ###  for recruiter testing use jwt generated below
-POST http://localhost:3000/sessions
+POST http://localhost:5000/sessions
 Content-Type: application/json
 
 {
