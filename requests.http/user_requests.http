@@ -16,7 +16,7 @@ POST http://localhost:5000/sessions
 Content-Type: application/json
 
 {
-  "email": "kyle@email.com",
+  "email": "ianb@tes.com",
   "password": "password"
 }
 
@@ -25,6 +25,6 @@ POST http://localhost:5000/sessions
 Content-Type: application/json
 
 {
-  "email": "eric@email.com",
+  "email": "kenny@email.com",
   "password": "password"
 }

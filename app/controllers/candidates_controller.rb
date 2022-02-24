@@ -8,7 +8,7 @@ class CandidatesController < ApplicationController
   end
 
   def show
-    candidate = candidate.find_by(id: params[:id])
+    candidate = Candidate.find_by(id: params[:id])
     render json: candidate
   end
 

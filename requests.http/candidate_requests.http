@@ -1,6 +1,6 @@
 ###CREATE
 POST http://localhost:5000/candidates
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMywiZXhwIjoxNjQ1Mzk4NzIyfQ.54LTJoH0y7Jvh8km2bArE8nuObxPTszmXyB3UjbInt4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDU4MjI1MzR9.Kz-oreblO8Mp0jAU2iHTCu2sWyoLF1lZCW7Vd8uWJvI
 Content-Type: application/json
 
 {
@@ -14,5 +14,10 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDU0NjQyO
 ### GET
 
 GET http://localhost:5000/candidates
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE2NDU1MDUwMzB9.DJGbK3P9A9n1HtgwkXIREc7APFvuF1q5Us28DHhKoZ4
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDU4MjI1MzR9.Kz-oreblO8Mp0jAU2iHTCu2sWyoLF1lZCW7Vd8uWJvI
+Content-Type: application/json
+### GET by id
+
+GET http://localhost:5000/candidates/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDU4MjI1MzR9.Kz-oreblO8Mp0jAU2iHTCu2sWyoLF1lZCW7Vd8uWJvI
 Content-Type: application/json
